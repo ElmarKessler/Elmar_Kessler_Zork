@@ -11,11 +11,21 @@ public class Item {
     }
 
     public String getName() {
+<<<<<<< HEAD
         return name;
     }
 
     public String getDescription() {
         return description;
+=======
+        // Implementiere den Zugriff auf den Namen des Items
+        return "";
+    }
+
+    public String getDescription() {
+        // Implementiere den Zugriff auf die Beschreibung des Items
+        return "";
+>>>>>>> 166586e7386083584046038737706fb25c7472ba
     }
 
     public void use() {

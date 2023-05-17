@@ -3,7 +3,10 @@ import java.util.List;
 
 public class Room<Direction> {
     String description;
+
     private ArrayList<Item> items;
+
+    private List<Item> items;
 
 
 
@@ -14,12 +17,25 @@ public class Room<Direction> {
 
     public String getDescription(){
 
+
         return description;
     }
 
 
     public void addItem(Item item) {
         items.add(item);
+
+        return "";
+    }
+
+    public Room getExit(Direction direction) {
+        // Implementiere den Zugriff auf den Raum in der angegebenen Richtung
+        return null;
+    }
+
+    public void addItem(Item item) {
+        // Implementiere das Hinzufügen eines Items zum Raum
+
     }
 
     public void removeItem(Item item) {
