@@ -6,7 +6,7 @@ public class Game {
 
         System.out.printf("Willkommen zu Zork");
 
-        System.out.printf("Willkommen zu Zork - Das verlassene Hotel\n\nDu betrittst das verlassene Hotel. Dunkelheit und Stille umgeben dich. Der Boden ist mit Staub bedeckt, und die Möbel sind verwittert.\nVor dir erstreckt sich ein langer Flur.\nEin verwittertes Schild zeigt auf einen Fahrstuhl, der nach oben führt. Daneben siehst du eine Treppe, die in die Dunkelheit hinabführt.\nBist du bereit, die Geheimnisse dieses Ortes zu erkunden und das Rätsel des verlassenen Hotels zu lösen?\n\nGib deine Befehle ein, um voranzukommen und herauszufinden, was hier geschehen ist. Viel Glück!\n");
+        System.out.printf("Willkommen zu Zork - \n\nGib deine Befehle ein, um voranzukommen und herauszufinden, was hier geschehen ist. Viel Glück!\n");
 
 
    Command command =new Command();

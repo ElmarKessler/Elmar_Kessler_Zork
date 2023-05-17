@@ -25,11 +25,11 @@ public class Command {
                 System.out.println("Where you want to move to?");
                 String specifiedInput = scanner.nextLine().toLowerCase();
                 if (specifiedInput.equals("forward")) {
-<<<<<<< HEAD
+
                     System.out.println(".");
-=======
+
                     System.out.println("Hier ist ein Flur, umgeben von Hotelzimmer.");
->>>>>>> 166586e7386083584046038737706fb25c7472ba
+
                 }
                 if (specifiedInput.equals("right")) {
                     System.out.println("Hier ist eine Treppe, die nach unten führt.");
