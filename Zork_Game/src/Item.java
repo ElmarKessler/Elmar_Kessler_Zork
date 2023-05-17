@@ -18,15 +18,8 @@ public class Item {
     public String getDescription() {
         return description;
 
-        // Implementiere den Zugriff auf den Namen des Items
-        return "";
-    }
+          }
 
-    public String getDescription() {
-        // Implementiere den Zugriff auf die Beschreibung des Items
-        return "";
-
-    }
 
     public void use() {
         // Implementiere das Verhalten, wenn das Item benutzt wird

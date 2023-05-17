@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Game {
@@ -17,7 +18,7 @@ public class Game {
     Item potion = new Item("Health Potion", "Restores health points");
     Item key = new Item("Key", "Unlocks doors");
 
-    Room room1 = new Room("You are in a dark room.", sword);
-    Room room2 = new Room("You enter a large hall.", potion);
+    Room room1 = new Room("You are in a dark room.", sword );
+    Room room2 = new Room("You enter a large hall.", potion );
     Room room3 = new Room("You find yourself in a mysterious chamber.", key);
 }

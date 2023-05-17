@@ -6,9 +6,6 @@ public class Room<Direction> {
 
     private ArrayList<Item> items;
 
-    private List<Item> items;
-
-
 
     public Room(String description, Item item) {
         this.description = description;
@@ -25,7 +22,6 @@ public class Room<Direction> {
     public void addItem(Item item) {
         items.add(item);
 
-        return "";
     }
 
     public Room getExit(Direction direction) {
@@ -33,10 +29,6 @@ public class Room<Direction> {
         return null;
     }
 
-    public void addItem(Item item) {
-        // Implementiere das Hinzufügen eines Items zum Raum
-
-    }
 
     public void removeItem(Item item) {
         // Implementiere das Entfernen eines Items aus dem Raum

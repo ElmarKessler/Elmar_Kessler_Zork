@@ -1,61 +1,86 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Command {
-    public String getAction() {
-        // Implementiere den Zugriff auf die Aktion des Kommandos
-        return "";
-    }
-
-    public List<String> getParameters() {
-        // Implementiere den Zugriff auf die Parameter des Kommandos
-        return new ArrayList<>();
-    }
-
-    public void userInput() {
+    public void userInput(){
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine().toLowerCase();
-        switch (userInput) {
+        String command;
 
-            case "look":
-                System.out.println("You look around the room. You see a leaflet in front of you");
-                break;
-            case "go":
-                System.out.println("Where you want to move to?");
-                String specifiedInput = scanner.nextLine().toLowerCase();
-                if (specifiedInput.equals("forward")) {
+        // Game introduction
+        System.out.println("Welcome to Zork!");
+        System.out.println("You find yourself in a house.");
 
-                    System.out.println(".");
+        // Game loop
+        while (true) {
+            System.out.println();
+            System.out.print("> ");
+            command = scanner.nextLine().toLowerCase();
 
-                    System.out.println("Hier ist ein Flur, umgeben von Hotelzimmer.");
-
-                }
-                if (specifiedInput.equals("right")) {
-                    System.out.println("Hier ist eine Treppe, die nach unten führt.");
-                }
-                if (specifiedInput.equals("Hier ist ein Aufzug, der nach oben führt.")) {
-
-                }
-                if (specifiedInput.equals("back")) {
-                    System.out.println("Hier ist der Ausgang, versperrt.");
-                }
-                break;
-            case "take":
-                System.out.println("What do you want to take?");
-
-                break;
-            case "use":
-                System.out.println("What do you want to use?");
-                break;
-            case "quit":
-                System.out.println("Goodbye.");
-                break;
-            default:
-                System.out.println("I don't recognize this command.");
-                break;
+            switch (command) {
+                case "help":
+                    System.out.println("Available commands: look, go, take, use, quit.");
+                    break;
+                case "look":
+                    System.out.println("You look around the room. You see a leaflet in front of you.");
+                    break;
+                case "go":
+                    System.out.println("Where do you want to move to?");
+                    String specifiedInput = scanner.nextLine().toLowerCase();
+                    switch (specifiedInput) {
+                        case "forward":
+                            System.out.println("There are three rooms.");
+                            break;
+                        case "right":
+                            System.out.println("Here is a staircase that leads downstairs.");
+                            break;
+                        case "up":
+                            System.out.println("Here is an elevator that leads upstairs.");
+                            break;
+                        case "back":
+                            System.out.println("Here is the exit, blocked.");
+                            break;
+                        default:
+                            System.out.println("You can't go there.");
+                            break;
+                    }
+                    break;
+                case "take":
+                    System.out.println("What do you want to take?");
+                    break;
+                case "use":
+                    System.out.println("What do you want to use?");
+                    break;
+                case "quit":
+                    System.out.println("Goodbye.");
+                    System.exit(0);
+                    break;
+                case "look up":
+                    System.out.println("There's nothing interesting above you.");
+                    break;
+                case "look down":
+                    System.out.println("You see the floor beneath your feet.");
+                    break;
+                case "go left":
+                    System.out.println("There's a wall blocking your way.");
+                    break;
+                case "take pen":
+                    System.out.println("You don't see a pen anywhere.");
+                    break;
+                case "use leaflet":
+                    System.out.println("The leaflet doesn't seem to have any use.");
+                    break;
+                case "go through door":
+                    System.out.println("There's no door in this room.");
+                    break;
+                case "take key":
+                    System.out.println("You don't see a key anywhere.");
+                    break;
+                case "use door":
+                    System.out.println("The door is locked.");
+                    break;
+                default:
+                    System.out.println("I don't recognize this command.");
+                    break;
+            }
         }
-        // Implementiere das Parsen der Benutzereingabe und die Erzeugung eines Command-Objekts
-
     }
 }
