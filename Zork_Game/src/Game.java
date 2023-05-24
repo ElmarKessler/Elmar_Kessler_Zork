@@ -2,7 +2,7 @@ public class Game {
     public static void main(String[] args) {
 
 
-        System.out.printf("Willkommen in Zork - \n\nGib deine Befehle ein, um voranzukommen und herauszufinden, was hier geschehen ist. Viel Glück!\n");
+        System.out.printf("Willkommen in Zork \n\nGib deine Befehle ein, um voranzukommen und herauszufinden, was hier geschehen ist. Viel Glück!\n");
 
         while (true) {
             Command command = new Command();

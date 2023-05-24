@@ -1,8 +1,14 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-private ArrayList<Item> inventoryItems;
+    private ArrayList<Item> inventoryItems;
+
+    public Player() {
+        inventoryItems = new ArrayList<>();
+    }
+
     public Room getCurrentRoom() {
         // Implementiere den Zugriff auf den aktuellen Raum des Spielers
         return null;
@@ -13,6 +19,10 @@ private ArrayList<Item> inventoryItems;
 
     }
 
+    public ArrayList<Item> getInventoryItems() {
+        return inventoryItems;
+    }
+
     public void pickupItem(Item item) {
         // Implementiere das Aufheben eines Items durch den Spieler
     }
@@ -20,9 +30,11 @@ private ArrayList<Item> inventoryItems;
     public void dropItem(Item item) {
         // Implementiere das Ablegen eines Items durch den Spieler
     }
-
-    public List<Item> getInventory() {
-        // Implementiere den Zugriff auf das Inventar des Spielers
-        return new ArrayList<>();
+public void printInventory(){
+    for (int i = 0; i < inventoryItems.size(); i++) {
+        Item item = inventoryItems.get(i);
+        System.out.println(item.getName());
     }
+}
+
 }
