@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
+    private Item item1 = new Item("Sword", "Useful weapon against enemies.");
+    private Item item2 = new Item("Key", "To open doors.");
+    private Item item3 = new Item("Potion", "It can save your live.");
+    private Item item4 = new Item("Leaflet", "Leaflet with useful hints.");
     private ArrayList<Item> inventoryItems;
 
     public Player() {
@@ -10,30 +14,41 @@ public class Player {
     }
 
     public Room getCurrentRoom() {
-        // Implementiere den Zugriff auf den aktuellen Raum des Spielers
+
         return null;
     }
 
     public void setCurrentRoom(Room room) {
-        // Setze den aktuellen Raum des Spielers
-
     }
 
+    public void addItem1ToInventory(){
+inventoryItems.add(item1);
+    }
+    public void addItem2ToInventory(){
+        inventoryItems.add(item2);
+    }
+    public void addItem3ToInventory(){
+        inventoryItems.add(item3);
+    }
+    public void addItem4ToInventory(){
+        inventoryItems.add(item4);
+    }
     public ArrayList<Item> getInventoryItems() {
         return inventoryItems;
     }
 
     public void pickupItem(Item item) {
-        // Implementiere das Aufheben eines Items durch den Spieler
+
     }
 
     public void dropItem(Item item) {
-        // Implementiere das Ablegen eines Items durch den Spieler
+
     }
 public void printInventory(){
-    for (int i = 0; i < inventoryItems.size(); i++) {
-        Item item = inventoryItems.get(i);
-        System.out.println(item.getName());
+    System.out.println(inventoryItems.size());
+    for (Item item : inventoryItems) {
+        System.out.println(item);
+
     }
 }
 

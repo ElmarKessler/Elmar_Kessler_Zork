@@ -5,6 +5,7 @@ public class Game {
         System.out.printf("Willkommen in Zork \n\nGib deine Befehle ein, um voranzukommen und herauszufinden, was hier geschehen ist. Viel Glück!\n");
 
         while (true) {
+            System.out.print("> ");
             Command command = new Command();
             command.userInput();
             command.InputHandler();

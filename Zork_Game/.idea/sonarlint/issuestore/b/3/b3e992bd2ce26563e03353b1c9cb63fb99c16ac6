@@ -1,0 +1,30 @@
+
+a
+java:S1192["FDefine a constant instead of duplicating this literal "item2" 4 times.(ø÷ŸÌÿÿÿÿÿ
+a
+java:S1192U"FDefine a constant instead of duplicating this literal "item1" 4 times.(‚˜ãÎüÿÿÿÿ
+]
+java:S1192Y"GDefine a constant instead of duplicating this literal "Taken." 8 times.(éà”½
+b
+java:S1192”"FDefine a constant instead of duplicating this literal "Used." 8 times.(ı£ÆĞøÿÿÿÿ
+a
+java:S1192g"FDefine a constant instead of duplicating this literal "item4" 4 times.(î€ù­şÿÿÿÿ
+\
+java:S1192a"FDefine a constant instead of duplicating this literal "item3" 4 times.(€„í«
+1
+java:S1700"Rename field "command"(æÑö—şÿÿÿÿ
+q
+java:S1450"VRemove the "command" field and declare it as a local variable in the relevant methods.(æÑö—şÿÿÿÿ
+W
+java:S1854"<Remove this useless assignment to local variable "keywords".(¯ÿèáüÿÿÿÿ
+H
+java:S1481"-Remove this unused "keywords" local variable.(¯ÿèáüÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ¹é
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Ñ¹é
+V
+java:S1854";Remove this useless assignment to local variable "scanner".(ù ƒ‘üÿÿÿÿ
+G
+java:S1481",Remove this unused "scanner" local variable.(ù ƒ‘üÿÿÿÿ
+7
+java:S1116j"Remove this empty statement.(Åñ­õşÿÿÿÿ

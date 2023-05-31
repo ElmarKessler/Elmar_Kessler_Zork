@@ -25,17 +25,17 @@ public class Room<Direction> {
     }
 
     public Room getExit(Direction direction) {
-        // Implementiere den Zugriff auf den Raum in der angegebenen Richtung
+
         return null;
     }
 
 
     public void removeItem(Item item) {
-        // Implementiere das Entfernen eines Items aus dem Raum
+
     }
 
     public List<Item> getItems() {
-        // Implementiere den Zugriff auf die Items im Raum
+
         return new ArrayList<>();
     }
 

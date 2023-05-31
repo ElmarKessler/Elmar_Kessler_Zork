@@ -22,6 +22,6 @@ public class Item {
 
 
     public void use() {
-        // Implementiere das Verhalten, wenn das Item benutzt wird
+
     }
 }

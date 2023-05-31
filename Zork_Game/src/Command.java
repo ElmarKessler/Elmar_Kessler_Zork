@@ -5,6 +5,8 @@ public class Command {
     private String secondWord;
     private String command;
 
+
+
     public void userInput() {
         String[] keywords = {"go", "take", "use", "look", "inventory", "quit", "help"};
         Scanner scanner = new Scanner(System.in);
@@ -34,7 +36,7 @@ public class Command {
                 break;
             case "go":
                 if (secondWord == null) {
-                    System.out.println("Where do you want to go?");
+                    System.out.println("Where do you want to go?\n> ");
                     Scanner scanDirection = new Scanner(System.in);
                     String specifiedInput = scanDirection.nextLine().toLowerCase();
                     switch (specifiedInput) {
@@ -76,32 +78,32 @@ public class Command {
                 break;
             case "take":
                 if (secondWord == null) {
-                    System.out.println("What do you want to take?");
+                    System.out.println("What do you want to take?\n> ");
                     Scanner scanItem = new Scanner(System.in);
                     String specifiedInput = scanItem.nextLine().toLowerCase();
                     switch (specifiedInput) {
                         case "item1":
-                            Item item1 = new Item("Sword", "Useful weapon against enemies.");
                             Player player = new Player();
-                            player.getInventoryItems().add(item1);
+                            player.addItem1ToInventory();
+
                             System.out.println("Taken.");
                             break;
                         case "item2":
-                            Item item2 = new Item("Key", "To open doors.");
                             Player player2 = new Player();
-                            player2.getInventoryItems().add(item2);
+                            player2.addItem2ToInventory();
+
                             System.out.println("Taken.");
                             break;
                         case "item3":
-                            Item item3 = new Item("Potion", "It heals you.");
                             Player player3 = new Player();
-                            player3.getInventoryItems().add(item3);
+                            player3.addItem3ToInventory();
+
                             System.out.println("Taken.");
                             break;
                         case "item4":
-                            Item item4 = new Item("Leaflet", "Leaflet with useful hints.");
                             Player player4 = new Player();
-                            player4.getInventoryItems().add(item4);
+                            player4.addItem4ToInventory();
+                        ;
                             System.out.println("Taken.");
                             break;
                         default:
@@ -111,26 +113,34 @@ public class Command {
                 } else {
                     switch (secondWord) {
                         case "item1":
+                            Player player = new Player();
+                            player.addItem1ToInventory();
                             System.out.println("Taken.");
                             break;
                         case "item2":
+                            Player player2 = new Player();
+                            player2.addItem1ToInventory();
                             System.out.println("Taken.");
                             break;
                         case "item3":
+                            Player player3 = new Player();
+                            player3.addItem1ToInventory();
                             System.out.println("Taken.");
                             break;
                         case "item4":
+                            Player player4 = new Player();
+                            player4.addItem1ToInventory();
                             System.out.println("Taken.");
                             break;
                         default:
-                            System.out.println("There is no such item.");
+                            System.out.println("You can't see such item.");
                             break;
                     }
                 }
                 break;
             case "use":
                 if (secondWord == null) {
-                    System.out.println("What do you want to take?");
+                    System.out.println("What do you want to use?\n> ");
                     Scanner scanUseItem = new Scanner(System.in);
                     String specifiedInput = scanUseItem.nextLine().toLowerCase();
                     switch (specifiedInput) {
@@ -178,6 +188,8 @@ public class Command {
                 Player player = new Player();
                 player.printInventory();
                 break;
+            default:
+                System.out.println("That's not a command I recognise.");
 
         }
     }
